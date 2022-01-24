@@ -1,14 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
-/* Utilities */
+/* GLOBAL */
 a {
   text-decoration: none;
 }
 li {
   list-style-type: none;
 }
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
   margin: 0;
   padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+body {
+  min-height: 100vh;
+  font-family: "roboto", sans-serif;
+  line-height: 1.5;
+}
+/* Makes imgs easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Utilities */
+.letter-spacing {
+  letter-spacing: 2px;
 }
 /* ----------
 HEADER
@@ -35,4 +66,76 @@ header {
 }
 .logo {
   padding: 1rem;
+}
+
+/* --------
+HERO
+------------ */
+#main {
+  background-color: rgba(1, 134, 134, 0.95);
+  height: calc(100vh - 84.97px);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  height: 100%;
+  width: 100%
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin-inline: auto;
+    height: 100%;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.img-home {
+  width: 600px;
+  height: 400px;
+  align-content: center;
+}
+
+.content {
+  max-width: 40rem;
+  color: white;
+}
+.content h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.content p {
+  font-weight: 100;
+  font-size: 1rem;
+}
+.btn {
+  margin-top: 1rem;
+  border-radius: 50rem;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.btn-home {
+  margin-top: 1rem;
+  border-radius: 50rem;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  background-color: rgba(1, 85, 134, 0.95);
+  border-color: rgba(1, 85, 134, 0.95);
+  color: white;
+  letter-spacing: 1px;
+}
+.btn-home:hover {
+  background-color: rgba(14, 93, 138, 0.95);
+  border-color: rgba(14, 93, 138, 0.95);
+  cursor: pointer;
 }
