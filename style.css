@@ -120,6 +120,7 @@ HERO
 .btn {
   margin-top: 1rem;
   border-radius: 50rem;
+  border: 2px solid;
   padding-inline: 2rem;
   padding-block: 1rem;
   font-weight: 700;
@@ -128,7 +129,7 @@ HERO
 }
 .btn-home {
   background-color: rgba(1, 85, 134, 0.95);
-  border-color: rgba(1, 85, 134, 0.95);
+  border: 2px solid rgba(1, 85, 134, 0.95);
   color: white;
 }
 .btn-home:hover {
@@ -191,4 +192,43 @@ TESTIMONIAL
 .client{
   font-size: 1.5rem;
   text-align: end;
+}
+
+/* ----------
+SIGN UP
+-------------- */
+.sign-up{
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  
+}
+.container--sign-up{
+  height: 10rem;
+  width: 1200px;
+  margin-inline: auto;
+  justify-content:center;
+  background:rgba(1, 134, 134, 0.95);
+  border-radius: 20px;
+  align-items: center;
+  gap: 3rem;
+}
+.container--sign-up h2{
+  color: white;
+}
+.container--sign-up p{
+  color: rgb(216, 216, 216);
+  font-weight: 100;
+}
+.btn-sign-up{
+  background-color: rgba(1, 134, 134, 0.95);
+  border-color: white;
+  border-bottom-color: white;
+  color: white;
+}
+.btn-sign-up:hover{
+  background-color: rgba(45, 161, 161, 0.95);
+  cursor: pointer;
+  color: white;
 }
