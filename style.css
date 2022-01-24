@@ -47,6 +47,9 @@ HEADER
 nav {
   background-color: rgb(0, 128, 128, 0.95);
   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 header {
   display: flex;
@@ -54,6 +57,7 @@ header {
   font-family: "roboto", sans-serif;
   max-width: 1200px;
   margin-inline: auto;
+  
 }
 .nav-links {
   display: flex;
@@ -123,19 +127,68 @@ HERO
   letter-spacing: 1px;
 }
 .btn-home {
-  margin-top: 1rem;
-  border-radius: 50rem;
-  padding-inline: 2rem;
-  padding-block: 1rem;
-  font-weight: 700;
-  font-size: 1.1rem;
   background-color: rgba(1, 85, 134, 0.95);
   border-color: rgba(1, 85, 134, 0.95);
   color: white;
-  letter-spacing: 1px;
 }
 .btn-home:hover {
   background-color: rgba(14, 93, 138, 0.95);
   border-color: rgba(14, 93, 138, 0.95);
   cursor: pointer;
+}
+
+/* ----------
+PRODUCTS
+------------- */
+.container--products{
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.title h2{
+  font-weight: 900;
+  font-size: 2rem;
+
+}
+.products{
+  display: flex;
+  gap: 1rem;
+}
+
+.product img{
+  max-width: 250px;
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
+  border: solid #0e5d8af2 6px;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 100;
+  color: rgb(90, 90, 90);
+}
+.product p{
+  margin-top: 1rem;
+}
+
+/* ------------
+TESTIMONIAL
+-------------- */
+.testimonials{
+  height: 100vh;
+ background-color: #e5e7eb;
+}
+.container--testimonials{
+  margin-inline: auto;
+}
+.quote{
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+.client{
+  font-size: 1.5rem;
+  text-align: end;
 }
