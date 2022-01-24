@@ -232,3 +232,15 @@ SIGN UP
   cursor: pointer;
   color: white;
 }
+
+/* ----------
+Footer
+------------- */
+.footer{
+  background-color: rgba(1, 134, 134, 0.95);
+  padding: 2rem;
+}
+.container{
+  color: white;
+  justify-content: center;
+}
